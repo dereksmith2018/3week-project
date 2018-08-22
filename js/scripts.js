@@ -1,20 +1,23 @@
-var translation= function(input){
-  var result=[]
+// backend
+var trans= function(string) {
+// why is the string posistion being shown?
+  for (i = 0; i < string; i++) {
+    if (i % 3 === 0 && i !== 0) {
+        $(".answer").append("I'm sorry, Dave. I can't do that" + " ");
 
-  for((parseInt(i = 0; i < number.length; i++)){
-    if ((parseint(i % 3 === 0 && ! = 0)){
-        return "I'm sorry, Dave. I can't do that";
+    } else if (i.toString().includes("1")) {
+        $(".answer").append("boop" + " ");
 
-    } else if (userInput.includes("1")) {
-        return "beep";
+    } else if (i.toString().includes("0")) {
+        $(".answer").append("beep" + " ");
 
-    } else ( userInput.inculdes("0")) {
-      return "beep";
+    } else {
+        $(".answer").append(i + " ")
     }
   }
 
 
-}
+};
 
 
 
@@ -23,8 +26,12 @@ $(document).ready(function(){
   $("form#userEntry").submit(function(event){
     event.preventDefault();
     var userInput = $("#textInput").val()
-    outResults= translation(userInput)
-    $("#answer").text(outResults);
+    var userEntry = parseInt(userInput);
+    $(".answer").append("");
+    var outResults= trans(userEntry)
+    $("#textInput").val();
 
-  )}
-)}
+
+
+  });
+});
