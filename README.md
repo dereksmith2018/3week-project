@@ -1,10 +1,10 @@
-BEEP BOOP
-By:Derek Smith
+#BEEP BOOP
+##By:Derek Smith
 
-Description:
-basic webpage the replaced text with output
+##Description:
+Basic webpage the replaced text with output
 
-SPEC:
+##SPEC:
 -the program returns the user input back with robot
 -the program replaces "0" with beep
 -the program replaces "1" with boop
@@ -12,16 +12,21 @@ SPEC:
 
 
 Setup:
-web browser
+Use will input number- User input will be put in array- The array will separate each string and turn it back to a number-
+The number will go through the "forloop" and the number if matches any value will be changed.
 
-Built With:
+###Built With:
 -atom
 -js script
 -github
+-plunkr.co
 
 
-Authors
+###Authors
 Derek Smith.
 
-License
+###Get at":
+https://github.com/dereksmith2018/3week-project.git
+
+###License
 This project is licensed under Derek Smith
